@@ -4,31 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ngopi-coffee</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <style>
+      .font-inter {
+        font-family: 'Inter', sans-serif;
+      }
+      .font-playfair {
+        font-family: 'Playfair Display', serif;
+      }
+      .custom-divider {
+      width: 1152px;
+      height: 2px;
+      background: linear-gradient(
+        to right,
+        rgba(128, 128, 128, 0.3), 
+        rgba(128, 128, 128, 1),   
+        rgba(128, 128, 128, 0.3)  
+      );
+      margin: 0 auto;
+    }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>   
 </head>
 <body>
     <!--header-->
-    <header class="w-[1440px] h-[88px] bg-white text-gray-700 grid grid-cols-[auto_1fr_auto] items-center px-[80px]">
-        <div class="justify-self-start">
+    <header class="w-ful h-[88px] bg-white text-gray-700 mt-12 font-inter">
+        <div class="w-[1280px] mx-auto flex items-center justify-between">
+            <div class="flex-shrink-0">
                 <img src="/img/Logo.svg" alt="" class="h-10">
-            </div>
-            <div class="justify-self-center">
-                 <nav class="flex space-x-[56px]">
+                </div>
+                 <nav class="flex space-x-[56px] mx-auto">
                     <a href="#" class="hover:underline">Products</a>
                     <a href="#" class="hover:underline">About us</a>
                     <a href="#" class="hover:underline">Testimonial</a>
                     <a href="#" class="hover:underline">Contact</a>
                  </nav>    
-            </div>
-            <div class="justify-self-end flex items-center space-x-4">
+            <div class="flex items-center space-x-4 flex-shrink-0">
               <div class="flex items-center">
                 <img src="/img/Icon Search.svg" alt="" class="h-6">
             </div>
             <img src="/img/ShoppingBagOpen.svg" alt="" class="h-6">
+         </div>
         </div>
     </header>
+
+    <section class="w-[1440px] h-[936px] bg-white mx-auto flex flex-col items-center">
+        <!-- متن و دکمه -->
+        <div class="text-center mb-12 mt-12">
+          <h1 class="text-[64px] font-medium text-gray-900 mb-4 leading[1.2] font-playfair">
+            Enjoy Your Favorite <br /> Coffee with Ngopi
+          </h1>
+          <p class="text-lg text-gray-600 mb-6 font-inter">
+            Discover tranquility at Ngopi a sanctuary for unwinding, <br />
+            where your evenings are perfect with relaxation and rich flavors.
+          </p>
+          <div class="flex justify-center">
+            <img src="/img/Button.svg" alt="">
+        </div> 
+        </div>
+      
+        <!-- گالری تصاویر -->
+        <div class="w-[1280px] grid grid-cols-5 gap-4">
+          <div class="col-span-1">
+            <img src="/img/Rectangle 1464.svg" alt="Coffee Beans" class="w-full h-[348px] object-cover rounded-tl-3xl rounded-br-3xl">
+          </div>
+          <div class="col-span-1">
+            <img src="img/Rectangle 1463.svg" alt="Coffee Grinder" class="w-full h-[348px] object-cover rounded-tl-3xl rounded-br-3xl">
+          </div>
+          <div class="col-span-1">
+            <img src="/img/Rectangle 1462.svg" alt="Latte Art" class="w-full h-[348px] object-cover rounded-tl-3xl rounded-br-3xl">
+          </div>
+          <div class="col-span-1">
+            <img src="/img/Rectangle 1465.svg" alt="Pouring Coffee" class="w-full h-[348px] object-cover rounded-tl-3xl rounded-br-3xl">
+          </div>
+          <div class="col-span-1">
+            <img src="/img/Rectangle 1466.svg" alt="Barista Pouring" class="w-full h-[348px] object-cover rounded-tl-3xl rounded-br-3xl">
+          </div>
+        </div>
+        <div class="mt-20">
+            <div class="custom-divider"></div>
+        </div>
+      </section>
 </body>
 </html>
