@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ngopi-coffee</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@500&&400family=poppins:wght@400&family=plus+Jakarta+sans:wght@600&display=swap" rel="stylesheet">
     <style>
       .font-inter {
         font-family: 'Inter', sans-serif;
@@ -12,6 +12,16 @@
       .font-playfair {
         font-family: 'Playfair Display', serif;
       }
+      .font-jakarta {
+      font-family: 'Plus Jakarta Sans', sans-serif ;
+    }
+    .font-playfair {
+      font-family: 'playfair display' , serif ;
+    }
+    .font-poppins { 
+      font-family: 'poppins', sans-serif;
+   }
+
       .custom-divider {
       width: 1152px;
       height: 2px;
@@ -22,6 +32,30 @@
         rgba(128, 128, 128, 0.3)  
       );
       margin: 0 auto;
+    }
+    .stats-item {
+      position: relative;
+      width: 214px;
+      height: 114px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .stats-item:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      right: -40px; 
+      top: 0;
+      width: 1px;
+      height: 114px;
+      background: linear-gradient(
+        to bottom,
+        rgba(40, 42, 58, 0.3), 
+        rgba(40, 42, 58, 1),   
+        rgba(40, 42, 58, 0.3)
+      );
+      z-index: 1;
     }
     </style>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>   
@@ -85,5 +119,528 @@
             <div class="custom-divider"></div>
         </div>
       </section>
+
+      
+    <!-- سکشن آمار -->
+     <section>
+    <div class="w-[1440px] h-[274px] bg-[#FFFFFF] py-20 flex justify-center items-center mx-auto">
+      <div class="flex gap-[80px] text-center text-[#282A3A]">
+        <div class="stats-item">
+          <h2 class="text-[64px] leading-[1.2] tracking-[-0.02em] font-normal font-inter">30+</h2>
+          <p class="text-[24px] mt-[8px] font-playfair">Coffee Variant</p>
+        </div>
+        <div class="stats-item">
+          <h2 class="text-[64px] leading-[1.2] tracking-[-0.02em] font-normal font-inter">20+</h2>
+          <p class="text-[24px] mt-[8px] font-playfair">Meeting room</p>
+        </div>
+        <div class="stats-item">
+          <h2 class="text-[64px] leading-[1.2] tracking-[-0.02em] font-normal font-inter">25+</h2>
+          <p class="text-[24px] mt-[8px] font-playfair">Event space</p>
+        </div>
+        <div class="stats-item">
+          <h2 class="text-[64px] leading-[1.2] tracking-[-0.02em] font-normal font-inter">40+</h2>
+          <p class="text-[24px] mt-[8px] font-playfair">Global Achievement</p>
+        </div>
+      </div>
+    </div>
+    <div class="mt-20">
+      <div class="custom-divider"></div>
+  </div>
+    </section>
+     <!-- Products Section -->
+  <section class="w-[1140px] h-[961px] bg-white mx-auto flex flex-col items-center">
+    <div class="pt-[80px] pb-[80px] text-center">
+      <div class="w-[443px] mx-auto">
+        <h2 class="w-[149px] h-[29px] mx-auto text-[24px] leading-[1.2] tracking-[0] font-normal text-[#282A3A] font-inter opacity-56">
+          Our products
+        </h2>
+        <h3 class="w-[443px] h-[43px] mt-[8px] text-[36px] leading-[1.2] tracking-[0] font-normal text-[#000816] font-playfair whitespace-nowrap">
+          From Top Quality Materials
+        </h3>
+      </div>
+    </div>
+    <div class="w-[556px] h-[77px] rounded-[40px] bg-gray-200 px-[40px] py-[16px] flex justify-center items-center gap-[86px]">
+      <span class="text-[24px] leading-[1.2] tracking-[0.02] font-normal text-[#282A3A] font-inter">
+        Latte
+      </span>
+      <span class="text-[24px] leading-[1.2] tracking-[0.02] font-normal text-[#282A3A] font-inter">
+        Robusta
+      </span>
+      <span class="text-[24px] leading-[1.2] tracking-[0.02] font-normal text-[#282A3A] font-inter">
+        Acabica
+      </span>
+    </div>
+  
+    <div class="max-w-[1440px] w-full"></div>
+         <!-- کل صفحه -->
+  <div class="max-w-[1440px] w-full">
+    <!-- Products Section -->
+    <section class="w-[1280px] mx-auto py-[40px]">
+      <!-- بخش کارت‌های محصولات -->
+      <div class="w-full grid grid-cols-4 gap-[5px] mr-[15px] ml-[-15px]">
+          <!-- کارت محصول 1 -->
+<div class="bg-white rounded-[20px] p-[16px] flex flex-col shadow-md">
+  <!-- تصویر محصول -->
+  <img src="/img/Rectangle 1461 (2).svg" alt="Chocolate Latte" class="w-[316.25px] h-[240px] rounded-[20px] mb-[16px] shadow-sm object-cover">
+  <!-- بخش نوشته‌ها -->
+  <div class="w-[316.25px] h-[236px] flex flex-col">
+    <!-- عنوان معرفی -->
+    <h4 class="w-[254px] h-[34px] text-[24px] leading-[140%] tracking-[0] font-semibold text-[#1E2B33] font-jakarta text-left">Chocolate Latte</h4>
+    <!-- امتیاز و ستاره -->
+    <div class="flex items-center gap-[8px] mt-[8px]">
+      <img src="/img/Star 1.svg" alt="Star" class="w-[20px] h-[20px] self-center">
+      <span class="text-[20px] leading-[1.2] tracking-[0.02] font-bold text-[#282A3A] font-inter self-center">4.9</span>
+      <span class="text-[14px] leading-[1.5] font-normal text-gray-500 font-inter">(360 reviews)</span>
+    </div>
+    <!-- توضیح سه‌خطی -->
+    <p class="w-[254px] h-[66px] text-[16px] leading-[1.5] font-normal text-gray-500 font-inter mt-[8px] text-left">
+      Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit dolor fringilla
+    </p>
+    <!-- قیمت و دکمه پلاس -->
+    <div class="flex items-center justify-between mt-[16px] w-[316.25px]">
+      <span class="text-[20px] leading-[1.2] font-bold text-[#1E2B33] font-inter">$2.9</span>
+      <a href="#" class="mr-[50px]">
+        <img src="/img/Plus.svg" alt="Add to Cart" class="w-[80px] h-[32px] object-contain">
+      </a>
+    </div>
+  </div>
+</div>
+        <!-- کارت محصول 2 -->
+        <div class="bg-white rounded-[20px] p-[16px] flex flex-col shadow-md">
+          <!-- تصویر محصول -->
+          <img src="/img/Rectangle 1461 (3).svg" alt="Chocolate Latte" class="w-[316.25px] h-[240px] rounded-[20px] mb-[16px] shadow-sm object-cover">
+          <!-- بخش نوشته‌ها -->
+          <div class="w-[316.25px] h-[236px] flex flex-col">
+            <!-- عنوان معرفی -->
+            <h4 class="w-[254px] h-[34px] text-[24px] leading-[140%] tracking-[0] font-semibold text-[#1E2B33] font-jakarta text-left">Mocha Latte</h4>
+            <!-- امتیاز و ستاره -->
+            <div class="flex items-center gap-[8px] mt-[8px]">
+              <img src="/img/Star 1.svg" alt="Star" class="w-[20px] h-[20px] self-center">
+              <span class="text-[20px] leading-[1.2] tracking-[0.02] font-bold text-[#282A3A] font-inter self-center">5.0</span>
+              <span class="text-[14px] leading-[1.5] font-normal text-gray-500 font-inter">(180 reviews)</span>
+            </div>
+            <!-- توضیح سه‌خطی -->
+            <p class="w-[254px] h-[66px] text-[16px] leading-[1.5] font-normal text-gray-500 font-inter mt-[8px] text-left">
+              Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit dolor fringilla
+            </p>
+            <!-- قیمت و دکمه پلاس -->
+            <div class="flex items-center justify-between mt-[16px] w-[316.25px]">
+              <span class="text-[20px] leading-[1.2] font-bold text-[#1E2B33] font-inter">$2.7</span>
+              <a href="#" class="mr-[50px]">
+                <img src="/img/Plus.svg" alt="Add to Cart" class="w-[80px] h-[32px] object-contain">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- کارت محصول 3 -->
+        <div class="bg-white rounded-[20px] p-[16px] flex flex-col shadow-md">
+          <!-- تصویر محصول -->
+          <img src="/img/Rectangle 1461 (4).svg" alt="Chocolate Latte" class="w-[316.25px] h-[240px] rounded-[20px] mb-[16px] shadow-sm object-cover">
+          <!-- بخش نوشته‌ها -->
+          <div class="w-[316.25px] h-[236px] flex flex-col">
+            <!-- عنوان معرفی -->
+            <h4 class="w-[254px] h-[34px] text-[24px] leading-[140%] tracking-[0] font-semibold text-[#1E2B33] font-jakarta text-left">Coffee Latte</h4>
+            <!-- امتیاز و ستاره -->
+            <div class="flex items-center gap-[8px] mt-[8px]">
+              <img src="/img/Star 1.svg" alt="Star" class="w-[20px] h-[20px] self-center">
+              <span class="text-[20px] leading-[1.2] tracking-[0.02] font-bold text-[#282A3A] font-inter self-center">4.8</span>
+              <span class="text-[14px] leading-[1.5] font-normal text-gray-500 font-inter">(450 reviews)</span>
+            </div>
+            <!-- توضیح سه‌خطی -->
+            <p class="w-[254px] h-[66px] text-[16px] leading-[1.5] font-normal text-gray-500 font-inter mt-[8px] text-left">
+              Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit dolor fringilla
+            </p>
+            <!-- قیمت و دکمه پلاس -->
+            <div class="flex items-center justify-between mt-[16px] w-[316.25px]">
+              <span class="text-[20px] leading-[1.2] font-bold text-[#1E2B33] font-inter">$2.9</span>
+              <a href="#" class="mr-[50px]">
+                <img src="/img/Plus.svg" alt="Add to Cart" class="w-[80px] h-[32px] object-contain">
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- کارت محصول 4 -->
+        <div class="bg-white rounded-[20px] p-[16px] flex flex-col shadow-md">
+          <!-- تصویر محصول -->
+          <img src="/img/Rectangle 1461 (5).svg" alt="Chocolate Latte" class="w-[316.25px] h-[240px] rounded-[20px] mb-[16px] shadow-sm object-cover">
+          <!-- بخش نوشته‌ها -->
+          <div class="w-[316.25px] h-[236px] flex flex-col">
+            <!-- عنوان معرفی -->
+            <h4 class="w-[254px] h-[34px] text-[24px] leading-[140%] tracking-[0] font-semibold text-[#1E2B33] font-jakarta text-left">Hazelnut Latte</h4>
+            <!-- امتیاز و ستاره -->
+            <div class="flex items-center gap-[8px] mt-[8px]">
+              <img src="/img/Star 1.svg" alt="Star" class="w-[20px] h-[20px] self-center">
+              <span class="text-[20px] leading-[1.2] tracking-[0.02] font-bold text-[#282A3A] font-inter self-center">4.9</span>
+              <span class="text-[14px] leading-[1.5] font-normal text-gray-500 font-inter">(390 reviews)</span>
+            </div>
+            <!-- توضیح سه‌خطی -->
+            <p class="w-[254px] h-[66px] text-[16px] leading-[1.5] font-normal text-gray-500 font-inter mt-[8px] text-left">
+              Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit dolor fringilla
+            </p>
+            <!-- قیمت و دکمه پلاس -->
+            <div class="flex items-center justify-between mt-[16px] w-[316.25px]">
+              <span class="text-[20px] leading-[1.2] font-bold text-[#1E2B33] font-inter">$2.8</span>
+              <a href="#" class="mr-[50px]">
+                <img src="/img/Plus.svg" alt="Add to Cart" class="w-[80px] h-[32px] object-contain">
+              </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="w-[1440px] flex justify-center items-center mt-[20px]">
+  <img src="/img/Frame 48095567.svg" alt="Dots" class="w-[44px] h-[8px] object-contain transform -translate-x-20">
+</div>
+<div class="mt-20">
+  <div class="custom-divider"></div>
+</div>
+</div>
+
+     
+    <!-- سکشن جدید: Why we are the best -->
+    <section class="w-[1440px] flex flex-col items-center mt-[80px]">
+      <!-- تیتر -->
+      <div class="w-[400px] h-[80px] flex flex-col gap-[8px]">
+        <!-- خط اول: About us -->
+        <h2 class="w-[102px] h-[29px] mx-auto text-[24px] font-inter font-normal leading-[120%] tracking-[0] text-[#282A3A] opacity-56 underline decoration-solid decoration-1 decoration-[#282A3A]">
+          About us
+        </h2><!-- خط دوم: Why we are the best -->
+        <h1 class="w-[400px] h-[43px] text-[36px] font-playfair font-normal leading-[120%] tracking-[0] text-[#282A3A] transform translate-x-[30px]">
+          Why we are the best
+        </h1>
+      </div>
+    </section>
+  </div>
+<!-- قسمت دوم: نوشته‌ها و عکس‌ها -->
+<div class="w-[1280px] h-[442px] flex justify-between mt-[80px]">
+  <!-- سمت چپ: نوشته‌ها و دکمه -->
+  <div class="w-[600px] flex flex-col gap-[24px]">
+    <!-- تیکه اول -->
+    <p class="w-[600px] h-[128px] text-[20px] font-inter font-normal leading-[160%] tracking-[0] text-[#282A3A] underline decoration-solid decoration-1 decoration-[#282A3A]">
+      Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit dolor fringilla volutpat lectus amet. Integer sed pretium odio lectus at malesuada sed eget nunc. Vivrera malesuada viverra id vel tortor dui adipiscing.
+    </p>
+    <!-- تیکه دوم -->
+    <p class="w-[600px] h-[96px] text-[20px] font-inter font-normal leading-[160%] tracking-[0] text-[#282A3A]">
+      Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit dolor fringilla volutpat lectus amet. Integer sed pretium odio lectus at malesuada sed eget nunc.
+    </p>
+    <!-- تیکه سوم -->
+    <p class="w-[600px] h-[64px] text-[20px] font-inter font-normal leading-[160%] tracking-[0] text-[#282A3A]">
+      Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit dolor fringilla volutpat lectus amet.
+    </p>
+    <!-- دکمه READ MORE -->
+    <a href="#">
+      <img src="/img/Button (1).svg" alt="Read More" class="w-[280px] h-[82px] object-contain">
+    </a>
+  </div>
+
+
+  <!-- سمت راست: کادر عکس‌ها -->
+  <div class="w-[600px] h-[442px] relative">
+    <!-- تصویر دانه‌های قهوه (بالا-راست با 20px فاصله) -->
+    <img src="/img/Frame 48095522 (1).svg" alt="Coffee Beans" class="w-[288px] h-[378px] rounded-[20px] object-contain absolute top-0 right-0">
+    <!-- تصویر دستگاه قهوه (چپ-پایین با فاصله تنظیم‌شده) -->
+    <img src="/img/Frame 48095522.svg" alt="Coffee Machine" class="w-[288px] h-[378px] rounded-[20px] object-contain absolute bottom-0 left-0">
+  </div>
+</div>
+<div class="mt-20">
+  <div class="custom-divider"></div>
+</div>
+</div>
+
+   <!-- سکشن جدید -->
+   <section class="w-[1440px] h-[728px] flex flex-col items-center mt-20">
+    <!-- کامپوننت اول: تیتر دو خطی -->
+    <div class="w-[328px] h-[80px] flex flex-col gap-[8px]">
+      <!-- خط اول -->
+      <h2 class="w-[129px] h-[29px] mx-auto text-[24px] font-inter font-normal leading-[120%] tracking-[0] text-[#282A3A] opacity-56">
+        Testimonial</h2>
+        <!-- خط دوم -->
+        <h1 class="w-[328px] h-[43px] text-center text-[36px] font-playfair font-normal leading-[120%] tracking-[0] text-[#282A3A] whitespace-nowrap">
+          What our buyers say
+        </h1>
+      </div>
+        <!-- کامپوننت دوم: کادر اصلی با 3 کادر شخصیت -->
+        <div class="w-[1280px] h-[408px] flex gap-[30px] mt-[50px]">
+          <!-- کادر شخصیت 1 -->
+          <div class="w-[405.33px] h-[360px] bg-[#FFFFFF] rounded-[24px] p-[24px_40px] flex flex-col gap-[16px]">
+            <!-- کادر عکس/نوشته/ستاره -->
+            <div class="w-[325.33px] h-[100px] flex items-center gap-[16px]">
+              <!-- عکس شخصیت -->
+              <img src="/img/Ellipse 1.svg" alt="Person 1" class="w-[100px] h-[100px] rounded-full object-cover">
+              <!-- نوشته و ستاره‌ها -->
+              <div class="flex flex-col gap-[8px] items-start">
+                <p class="w-[137px] h-[24px] text-[20px] font-inter font-semibold leading-[120%] tracking-[0] text-[#282A3A]">
+                  Michael Wong
+                </p>
+                <img src="/img/Frame 38.svg" alt="Stars" class="w-[100px] h-[20px]">
+              </div>
+            </div>
+            <!-- متن نقل‌قول -->
+            <p class="w-[325.33px] h-[196px] text-[20px] font-inter font-normal leading-[140%] tracking-[0] text-[#282A3A]">
+              Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit dolor fringilla volutpat lectus amet. Integer sed pretium odio lectus at malesuada sed eget nunc. Viverra malesuada viverra id vel tortor dui adipiscing.
+            </p>
+          </div>
+  
+          <!-- کادر شخصیت 2 -->
+          <div class="w-[405.33px] h-[360px] bg-[#FFFFFF] rounded-[24px] p-[24px_40px] flex flex-col gap-[16px]">
+            <!-- کادر عکس/نوشته/ستاره -->
+            <div class="w-[325.33px] h-[100px] flex items-center gap-[8px]">
+              <!-- عکس شخصیت -->
+              <img src="/img/Ellipse 1 (1).svg" alt="Person 2" class="w-[100px] h-[100px] rounded-full object-cover">
+              <!-- نوشته و ستاره‌ها -->
+              <div class="flex flex-col gap-[8px] items-start">
+                <p class="w-[137px] h-[24px] text-[20px] font-inter font-semibold leading-[120%] tracking-[0] text-[#282A3A]">
+                  Avril Song
+                </p>
+                <img src="/img/Frame 38 (2).svg" alt="Stars" class="w-[100px] h-[20px]">
+              </div>
+            </div>
+            <!-- متن نقل‌قول -->
+            <p class="w-[325.33px] h-[196px] text-[20px] font-inter font-normal leading-[140%] tracking-[0] text-[#282A3A]">
+              Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit dolor fringilla volutpat lectus amet. Integer sed pretium odio lectus at malesuada sed eget nunc.
+            </p>
+          </div>
+  
+          <!-- کادر شخصیت 3 -->
+          <div class="w-[405.33px] h-[360px] bg-[#FFFFFF] rounded-[24px] p-[24px_40px] flex flex-col gap-[16px]">
+            <!-- کادر عکس/نوشته/ستاره -->
+            <div class="w-[325.33px] h-[100px] flex items-center gap-[8px]">
+              <!-- عکس شخصیت -->
+              <img src="/img/Ellipse 1 (2).svg" alt="Person 3" class="w-[100px] h-[100px] rounded-full object-cover">
+              <!-- نوشته و ستاره‌ها -->
+              <div class="flex flex-col gap-[8px] items-start">
+                <p class="w-[137px] h-[24px] text-[20px] font-inter font-semibold leading-[120%] tracking-[0] text-[#282A3A]">
+                  Jeanne Wood
+                </p>
+                <img src="/img/Frame 38 (2).svg" alt="Stars" class="w-[100px] h-[20px]">
+              </div>
+            </div>
+            <!-- متن نقل‌قول -->
+            <p class="w-[325.33px] h-[196px] text-[20px] font-inter font-normal leading-[140%] tracking-[0] text-[#282A3A]">
+              Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit dolor fringilla volutpat lectus amet. Integer sed pretium odio lectus at malesuada sed eget nunc. Viverra malesuada viverra id vel tortor dui adipiscing.
+            </p>
+          </div>
+        </div>
+  
+        <!-- نقاط زیر کادر اصلی -->
+        <div class="mt-[10px]">
+          <img src="/img/Frame 48095567.svg" alt="Dots" class="w-[50px] h-[10px] mx-auto">
+        </div>
+      </section>
+    </div>
+
+    <div class="mt-20">
+      <div class="custom-divider"></div>
+    </div>
+    </div>
+
+        <!-- سکشن جدید -->
+        <section class="w-[1440px] h-[1023px] flex flex-col items-center mt-[80px]">
+          <!-- کامپوننت اول: تیتر دو خطی -->
+          <div class="w-[274px] h-[80px] flex flex-col gap-[8px] mx-auto">
+            <!-- خط اول -->
+            <h2 class="w-[51px] h-[29px] mx-auto text-[24px] font-inter font-normal leading-[120%] tracking-[0] text-[#282A3A] opacity-56">
+              Blog
+            </h2>
+            <!-- خط دوم -->
+            <h1 class="w-[274px] h-[43px] text-center text-[36px] font-playfair font-normal leading-[120%] tracking-[0] text-[#282A3A] whitespace-nowrap">
+              Read our articles
+            </h1>
+          </div>
+              <!-- کامپوننت دوم: کادر اصلی با 3 کادر داخلی -->
+      <div class="w-[1280px] h-[541px] flex gap-[32px] mt-[80px]">
+        <!-- کادر 1 (چپ) -->
+        <div class="w-[405.33px] h-[541px] border border-1 border-[#D9D9D9] rounded-tr-[96px] rounded-bl-[40px] p-[16px] flex flex-col gap-[16px]">
+          <!-- عکس -->
+          <img src="/img/Rectangle 1461 (6).svg" alt="Contact Image 1" class="w-[373.33px] h-[320px] rounded-tr-[80px] rounded-bl-[80px] object-cover">
+          <!-- کادر جدید زیر عکس -->
+          <div class="w-[373.33px] h-[17px] flex justify-between">
+            <!-- کادر سمت چپ -->
+            <div class="w-[90px] h-[17px] flex gap-[8px] items-center">
+              <img src="/img/User.svg" alt="Icon Left" class="w-[17px] h-[17px]">
+              <p class="w-[65px] h-[17px] text-[14px] font-inter font-normal leading-[120%] tracking-[2%] text-[#282A3A]">
+                John Doe
+              </p>
+            </div>
+            <!-- کادر سمت راست -->
+            <div class="w-[116px] h-[17px] flex gap-[8px] items-center">
+              <img src="/img/CalendarBlank.svg" alt="Icon Right" class="w-[12.75px] h-[13.81px]">
+              <p class="w-[65px] h-[17px] text-[14px] font-inter font-normal leading-[120%] tracking-[0%] text-[#282A3A] whitespace-nowrap">
+                Feb 23, 2024
+              </p>
+            </div>
+          </div>
+             <!-- کادر نوشته جدید -->
+             <div class="w-[373.33px] h-[102px]">
+              <p class="w-[373.33px] h-[102px] text-[24px] font-plus-jakarta font-semibold leading-[140%] tracking-[0] text-[#282A3A]">
+                Lorem ipsum dolor sit amet consectetur. Est tempor morbi pellentesque.
+              </p>
+            </div>
+            <div class="w-[373.33px] h-[22px] flex justify-end px-[16px] rounded-[8px]">
+              <p class="w-[110px] h-[22px] text-[16px] font-inter font-normal leading-[140%] tracking-[0] text-[#282A3A]">
+                View details >
+              </p>
+            </div>
+          </div>
+        <!-- کادر 2 (وسط) -->
+        <div class="w-[405.33px] h-[541px] border border-1 border-[#D9D9D9] rounded-tr-[96px] rounded-bl-[40px] p-[16px] flex flex-col gap-[16px]">
+          <!-- عکس -->
+          <img src="/img//Rectangle 1461 (7).svg" alt="Contact Image 2" class="w-[373.33px] h-[320px] rounded-tr-[80px] rounded-bl-[80px] object-cover">
+          <!-- کادر جدید زیر عکس -->
+          <div class="w-[373.33px] h-[17px] flex justify-between">
+            <!-- کادر سمت چپ -->
+            <div class="w-[90px] h-[17px] flex gap-[8px] items-center">
+              <img src="/img/User.svg" alt="Icon Left" class="w-[17px] h-[17px]">
+              <p class="w-[65px] h-[17px] text-[14px] font-inter font-normal leading-[120%] tracking-[2%] text-[#282A3A]">
+                John Doe
+              </p>
+            </div>
+            <!-- کادر سمت راست -->
+            <div class="w-[116px] h-[17px] flex gap-[8px] items-center">
+              <img src="/img/CalendarBlank.svg" alt="Icon Right" class="w-[12.75px] h-[13.81px]"><p class="w-[65px] h-[17px] text-[14px] font-inter font-normal leading-[120%] tracking-[2%] text-[#282A3A] whitespace-nowrap">
+                Feb 23, 2024
+              </p>
+            </div>
+          </div>
+          <!-- کادر نوشته جدید -->
+          <div class="w-[373.33px] h-[102px]">
+            <p class="w-[373.33px] h-[102px] text-[24px] font-plus-jakarta font-semibold leading-[140%] tracking-[0] text-[#282A3A]">
+              Lorem ipsum dolor sit amet consectetur. Est tempor morbi pellentesque.
+            </p>
+          </div>
+          <div class="w-[373.33px] h-[22px] flex justify-end px-[16px] rounded-[8px]">
+            <p class="w-[110px] h-[22px] text-[16px] font-inter font-normal leading-[140%] tracking-[0] text-[#282A3A]">
+              View details >
+            </p>
+          </div>
+        </div>
+      
+        <!-- کادر 3 (راست) -->
+        <div class="w-[405.33px] h-[541px] border border-1 border-[#D9D9D9] rounded-tr-[96px] rounded-bl-[40px] p-[16px] flex flex-col gap-[16px]">
+          <!-- عکس -->
+          <img src="/img/Rectangle 1461 (8).svg" alt="Contact Image 3" class="w-[373.33px] h-[320px] rounded-tr-[80px] rounded-bl-[80px] object-cover">
+          <!-- کادر جدید زیر عکس -->
+          <div class="w-[373.33px] h-[17px] flex justify-between">
+            <!-- کادر سمت چپ -->
+            <div class="w-[90px] h-[17px] flex gap-[8px] items-center">
+              <img src="/img/CalendarBlank.svg" alt="Icon Left" class="w-[17px] h-[17px]">
+              <p class="w-[65px] h-[17px] text-[14px] font-inter font-normal leading-[120%] tracking-[2%] text-[#282A3A]">
+                John Doe
+              </p>
+            </div>
+            <!-- کادر سمت راست -->
+            <div class="w-[116px] h-[17px] flex gap-[8px] items-center">
+              <img src="/img/CalendarBlank.svg" alt="Icon Right" class="w-[12.75px] h-[13.81px]">
+              <p class="w-[65px] h-[17px] text-[14px] font-inter font-normal leading-[120%] tracking-[2%] text-[#282A3A] whitespace-nowrap">
+                Feb 23, 2024
+              </p>
+            </div>
+          </div>
+          <!-- کادر نوشته جدید -->
+          <div class="w-[373.33px] h-[102px]">
+            <p class="w-[373.33px] h-[102px] text-[24px] font-plus-jakarta font-semibold leading-[140%] tracking-[0] text-[#282A3A]">
+              Lorem ipsum dolor sit amet consectetur. Est tempor morbi pellentesque.
+            </p>
+          </div>
+          <div class="w-[373.33px] h-[22px] flex justify-end px-[16px] rounded-[8px]">
+            <p class="w-[110px] h-[22px] text-[16px] font-inter font-normal leading-[140%] tracking-[0] text-[#282A3A]">
+              View details >
+            </p>
+          </div>
+        </div>
+    </section>
+   <!-- عکس جدید -->
+   <div class="flex justify-center mt-[80px] mb-[80px] max-w-[1440px] mx-auto">
+    <img src="/img/Button (1).svg" alt="New Image" class="w-[280px] h-[82px] object-contain">
+</div>
+          <!-- فوتر -->
+    <footer class="w-[1440px] ml-[100px] min-h-[526px] py-[80px] px-8 bg-[#282A3A] text-white flex flex-col md:flex-row justify-between gap-[80px]">
+      <!-- لوگو و توضیحات -->
+      <div class="flex flex-col gap-8 w-[382px] h-[310px] pr-[80]">
+          <div class="flex items-center gap-6 w-[220px] h-[58px]">
+              <img src="/img/Logo (2).svg" alt="Ngopi Logo" class="w-[58px] h-[58px]">
+              <h2 class="font-inter font-semibold text-[48px] leading-[57.6px] tracking-[0] text-[#ffffff] w-[138px] h-[58px] flex items-center">Ngopi</h2>
+          </div>
+          <p class="font-inter font-normal text-[20px] leading-[32px] tracking-[0] text-[#ffffff] w-[382px] h-[128px]">
+            Discover tranquility at Ngopi a sanctuary for unwinding, where your evenings are perfected with relaxation and rich flavors.
+          </p>
+          <div class="flex flex-col gap-2 w-[213px] h-[60px]">
+              <p class="font-poppins font-normal text-[20px] leading-[20px] tracking-[0] text-[#ffffff]" style="font-family: 'Poppins', sans-serif !important;">hello@ngopi.com</p>
+              <p class="font-poppins font-normal text-[20px] leading-[20px] tracking-[0] text-[#ffffff]" style="font-family: 'Poppins', sans-serif !important;">Phone: +01 23456789</p>
+          </div>
+      </div>
+
+      <!-- کامپوننت سمت راست -->
+      <div class="flex flex-col">
+          <!-- کامپوننت بالایی -->
+          <div class="flex gap-[144px] w-[938px] h-[187px]">
+              <!-- قسمت اول (سمت چپ) -->
+              <div class="flex flex-col gap-6 w-[151px] h-[187px] text-left">
+                  <h3 class="font-playfair font-normal text-[24px] leading-[33.6px] tracking-[0] text-[#ffffff] w-[151px] h-[39px] whitespace-nowrap">
+                      Quick Links
+                  </h3>
+                  <div class="flex flex-col gap-4">
+                      <a href="#" class="font-inter font-normal text-[16px] leading-[16px] tracking-[0] text-[#ffffff] hover:text-gray-300">Services</a>
+                      <a href="#" class="font-inter font-normal text-[16px] leading-[16px] tracking-[0] text-[#ffffff] hover:text-gray-300">Portfolio</a>
+                      <a href="#" class="font-inter font-normal text-[16px] leading-[16px] tracking-[0] text-[#ffffff] hover:text-gray-300">About Us</a>
+                      <a href="#" class="font-inter font-normal text-[16px] leading-[16px] tracking-[0] text-[#ffffff] hover:text-gray-300">Testimonial</a>
+                  </div>
+              </div>
+
+              <!-- قسمت دوم (وسط) -->
+              <div class="flex flex-col gap-6 w-[147px] h-[152px] text-left">
+                  <h3 class="font-playfair font-normal text-[24px] leading-[33.6px] tracking-[0] text-[#ffffff] w-[147px] h-[39px] whitespace-nowrap">
+                      Resources
+                  </h3>
+                  <div class="flex flex-col gap-4">
+                      <a href="#" class="font-inter font-normal text-[14px] leading-[14px] tracking-[0] text-[#ffffff] hover:text-gray-300 whitespace-nowrap">Support</a><a href="#" class="font-inter font-normal text-[14px] leading-[14px] tracking-[0] text-[#ffffff] hover:text-gray-300 whitespace-nowrap">Privacy Policy</a>
+                      <a href="#" class="font-inter font-normal text-[14px] leading-[14px] tracking-[0] text-[#ffffff] hover:text-gray-300 whitespace-nowrap">Terms & Conditions</a>
+                  </div>
+              </div>
+
+              <!-- قسمت سوم (سمت راست) -->
+              <div class="flex flex-col gap-6 w-[272px] h-[111px] text-left">
+                  <h3 class="font-playfair font-normal text-[24px] leading-[33.6px] tracking-[0] text-[#ffffff] w-[158px] h-[39px] whitespace-nowrap">
+                      Social Media
+                  </h3>
+                  <div class="flex gap-2 w-[272px] h-[48px]">
+                      <a href="#"><img src="/img/Facebook.svg" alt="Facebook" class="w-[48px] h-[48px] opacity-70"></a>
+                      <a href="#"><img src="/img/Twitter.svg" alt="Twitter" class="w-[48px] h-[48px] opacity-70"></a>
+                      <a href="#"><img src="/img/Instagram.svg" alt="Instagram" class="w-[48px] h-[48px] opacity-70"></a>
+                      <a href="#"><img src="/img/Linkedin.svg" alt="LinkedIn" class="w-[48px] h-[48px] opacity-70"></a>
+                      <a href="#"><img src="/img/Youtube.svg" alt="YouTube" class="w-[48px] h-[48px] opacity-70"></a>
+                  </div>
+              </div>
+          </div>
+
+          <div class="mt-8">
+            <h3 class="font-playfair font-normal text-[24px] leading-[33.6px] tracking-[0] text-[#ffffff] w-[124px] h-[39px] whitespace-nowrap">
+                Subscribe
+            </h3>
+                 <!-- نوار اشتراک -->
+                 <div class="mt-8 w-[818px] h-[78px] rounded-[16px] pt-2 pr-2 pb-2 pl-6 flex items-center gap-[40px]" style="background-color: rgba(255, 255, 255, 0.08);">
+                  <div class="flex items-center gap-1">
+                  <!-- آیکون پاکت نامه -->
+                  <div class="relative w-[30px] h-[30px]">
+                      <img src="/img/EnvelopeSimple.svg" alt="Envelope" class="w-[30px] h-[30px]">
+                      <div class="absolute top-[7px] left-[4px] w-[22.5px] h-[10.5px] border-2 border-white"></div>
+                  </div>
+                  <!-- نوشته -->
+                  <p class="font-poppins font-normal text-[20px] leading-[20px] tracking-[0] w-[208px] h-[30px] flex items-center" style="color: rgba(255, 255, 255, 0.4); font-family: 'Poppins', sans-serif !important;">
+                    name@domain.com
+                  </p>
+                  </div>
+                  <!-- دکمه -->
+                  <a href="#" class="ml-auto">
+                    <img src="/img/Frame 20.svg" alt="Subscribe Button" class="w-[179px] h-[62px] rounded-[8px]">
+                </a>
+              </div>
+          </div>
+      </div>
+  </footer>
+</div>
 </body>
 </html>
